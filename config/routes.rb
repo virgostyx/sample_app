@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "/contact", to: "static_pages#contact"
 
   # Defines the routes for user management
-  get 'users/new'
+  get '/signup', to: "users#new"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
