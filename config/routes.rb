@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Defines the root path route ("/")
   root "static_pages#home"
 
@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   # Defines the routes for user management
   get '/signup', to: "users#new"
 
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :users
 
 end
