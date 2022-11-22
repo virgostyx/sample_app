@@ -45,6 +45,13 @@ gem "bootsnap", "1.12.0", require: false
 # Use Sass to process CSS
 gem "sassc-rails", "2.1.2"
 
+# Use Faker to create additional users
+gem "faker", "2.21.0"
+
+# Pagination
+gem "will_paginate",            "3.3.1"
+gem "bootstrap-will_paginate",  "1.0.0"
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
