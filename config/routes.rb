@@ -11,10 +11,13 @@ Rails.application.routes.draw do
 
   # Defines the routes for user management
   get "/signup", to: "users#new"
+
+  # Defines the routes for sessions management
   get "/login", to: "sessions#new"
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
 
+  # Defines resources management
   resources :users
-
+  resources :account_activations, only: [:edit]
 end
