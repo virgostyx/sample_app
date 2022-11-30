@@ -6,6 +6,12 @@ ruby "3.1.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "7.0.4"
 
+# Add image processing support
+gem "image_processing",           "1.12.2"
+
+# Add ActiveStorage validation features
+gem "active_storage_validations", "0.9.8"
+
 # Use Bootstrap 3
 gem "bootstrap-sass",  "3.4.1"
 
@@ -88,4 +94,5 @@ end
 
 group :production do
   gem "pg", "1.3.5"
+    gem "aws-sdk-s3", "1.114.0", require: false
 end
